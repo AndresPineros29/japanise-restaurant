@@ -14,7 +14,7 @@ const Footer = () => {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://github.com/AndresPineros29"
+              href="https://github.com/AndresPineros29/japanise-restaurant"
             >
               <BsGithub />
             </a>
