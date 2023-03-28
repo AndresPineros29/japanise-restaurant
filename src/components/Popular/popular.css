@@ -1,0 +1,131 @@
+.popular__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(
+    circle at 50% 50%,
+    rgba(50, 50, 50, 1) 0%,
+    rgba(16, 16, 16, 1) 36%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 50% 50%,
+    rgba(50, 50, 50, 1) 0%,
+    rgba(16, 16, 16, 1) 36%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 50% 50%,
+    rgba(50, 50, 50, 1) 0%,
+    rgba(16, 16, 16, 1) 36%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 50% 50%,
+    rgba(50, 50, 50, 1) 0%,
+    rgba(16, 16, 16, 1) 36%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(50, 50, 50, 1) 0%,
+    rgba(16, 16, 16, 1) 36%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.popular__container div {
+  margin: 2rem 0;
+}
+
+.popular__container div h2 {
+  font-size: 4rem;
+  color: var(--color-text);
+}
+
+.popular__content {
+  display: flex;
+}
+
+.popular__content__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: center;
+  position: relative;
+  background: white;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  padding: 2rem;
+  width: 400px;
+  height: 500px;
+  top: 1rem;
+  right: 2rem;
+}
+
+.popular__content__image img {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  top: 10rem;
+  left: 2rem;
+}
+
+.popular__content__arrows {
+  display: flex;
+  position: relative;
+  top: 7rem;
+  right: 1rem;
+  font-size: 40px;
+  color: white;
+  gap: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .popular__container div h2 {
+    font-size: 2rem;
+  }
+
+  .popular__content__text {
+    font-size: 0.9rem;
+    line-height: 1rem;
+    width: 250px;
+    height: 350px;
+  }
+
+  .popular__content__image img {
+    width: 250px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .popular__container div h2 {
+    font-size: 1.5rem;
+  }
+
+  .popular__content__text {
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+    width: 150px;
+    height: 200px;
+  }
+
+  .popular__content__image img {
+    width: 150px;
+    height: 200px;
+  }
+}

@@ -1,0 +1,110 @@
+.contact__container {
+  color: var(--color-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact__container__title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 5rem 0;
+}
+
+.contact__container__title h2 {
+  font-size: 3rem;
+  color: var(--color-text);
+}
+
+.contact__container__title h3 {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.contact__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 7rem;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.contact__info h4,
+.contact__mail h4 {
+  font-size: 2rem;
+  color: var(--text-secondary);
+}
+
+.contact__info ul {
+  list-style: none;
+  font-size: 1.2rem;
+  line-height: 4rem;
+}
+
+.contact__mail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.contact__mail__1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__mail input {
+  margin: 0.5rem;
+
+  border: 0;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.contact__mensaje {
+  height: 200px;
+}
+
+.contact__mail button {
+  margin: 0 0.5rem;
+}
+
+@media screen and (max-width: 900px) {
+  .contact__content {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact__content {
+    gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact__container h4 {
+    font-size: 1.5;
+  }
+
+  .contact__info {
+    margin: 0 0.5rem;
+  }
+
+  .contact__mail input {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contact__container {
+    scale: 0.9;
+  }
+}

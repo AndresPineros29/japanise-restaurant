@@ -1,0 +1,28 @@
+.navbar__res__container {
+  display: none;
+  background: black;
+  box-shadow: 0 0 20px #ffffff49;
+  padding: 1rem 0;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  color: var(--color-text);
+  font-size: 3rem;
+  z-index: 9;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__res__container {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navbar__res__container {
+    font-size: 2.3rem;
+    gap: 3rem;
+  }
+}

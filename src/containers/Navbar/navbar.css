@@ -1,0 +1,27 @@
+.navbar__container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  align-items: center;
+  background: black;
+  padding: 1rem 2rem;
+}
+
+.menu__contaner {
+  color: var(--color-text);
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 2rem;
+}
+
+.menu__contaner li:hover {
+  cursor: pointer;
+  color: var(--text-secondary);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__menu {
+    display: none;
+  }
+}

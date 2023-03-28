@@ -1,13 +1,37 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --color-text: #fdffee;
+  --color-subtext: #d5d5d5;
+  --text-secondary: #ffe08b;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--text-secondary);
+}
+
+.buttons {
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  background: buton;
+  width: 200px;
+  height: 50px;
+}
+
+.buttons:hover {
+  background: var(--text-secondary);
 }
